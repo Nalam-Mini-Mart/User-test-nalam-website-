@@ -980,7 +980,8 @@
         function checkShopStatus() {
             let currentHour = new Date().getHours(); 
             // Shop is open 4 PM (16) to 9 PM (21)
-            let isOpen = currentHour >= 16 && currentHour < 21; 
+            let isOpen = true; 
+         
             
             // Top Status Bar Update
             let statusText = document.getElementById('dynamic-shop-status');
